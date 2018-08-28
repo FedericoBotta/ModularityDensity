@@ -3,7 +3,7 @@
 If you use this code for your research, I kindly ask you to cite Ref. 1 in your publications.
 
 </div>
-For questions, requests or notifications, please write to f.botta@warwick.ac.uk.
+For questions, requests or notifications, please write to federico.botta@wbs.ac.uk
 
 &nbsp;
 <h2>USAGE</h2>
@@ -15,9 +15,9 @@ The algorithm initially sets the tolerance parameters (see Ref. 1 for a detailed
 
 community_detection_via_modularity_density_maximisation(double * values_modularity_density, int iteration)
 
-where values_modularity_density is a pointer to an array that stores the detected values of modularity density, which are then available for further analysis if needed; iteration is simply the indexÂ of the current iteration of the algorithm. In the available code, the value of modularity density and the partition detected are saved to file at each iteration invoking the function write_to_file(iteration) at the bottom of the code in ParallelisedOptimisedModDens.c.
+where values_modularity_density is a pointer to an array that stores the detected values of modularity density, which are then available for further analysis if needed; iteration is simply the index of the current iteration of the algorithm. In the available code, the value of modularity density and the partition detected are saved to file at each iteration invoking the function write_to_file(iteration) at the bottom of the code in ParallelisedOptimisedModDens.c.
 
-At the end of the algorithm, the memory is automatically cleaned with the function free_memory() invokedÂ at the bottom of the code in ParallelisedOptimisedModDens.c.
+At the end of the algorithm, the memory is automatically cleaned with the function free_memory() invoked at the bottom of the code in ParallelisedOptimisedModDens.c.
 
 In the available code, there is a simple proof of concept that uses the Dolphin network dataset (D. Lusseau, K. Schneider, O. J. Boisseau, P. Haase, E. Slooten, and S. M. Dawson, Behavioral Ecology and Sociobiology 54, 396-405, 2003). This network has 62 nodes.
 
@@ -29,9 +29,9 @@ You can then run it with:
 
 ./executable_file [number_of_nodes] [number_of_iterations]
 
-For the proof of concept, you shouldÂ use [number_of_nodes]=62.
+For the proof of concept, you should use [number_of_nodes]=62.
 
 &nbsp;
 <h2>REFERENCES</h2>
-Botta F, Del Genio CI. Finding network communities using modularity density. J Stat Mech - Theory E. (2016), 123402.
+1. Botta F, Del Genio CI. Finding network communities using modularity density. J Stat Mech - Theory E. (2016), 123402.
 
